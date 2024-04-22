@@ -1,3 +1,3 @@
-# stackblitz-starters-7a8cmt
+# Simple Shopping Cart Interface
 
-[Edit in StackBlitz next generation editor ⚡️](https://stackblitz.com/~/github.com/JacobSidanov/stackblitz-starters-7a8cmt)
+[Preview ⚡️](https://stackblitz.com/edit/stackblitz-starters-7a8cmt?embed=1&file=script.js&theme=dark&view=preview)
