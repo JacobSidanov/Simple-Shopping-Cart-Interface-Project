@@ -16,12 +16,12 @@ function removeFromCart(name) {
 
 function updateQuantity(name, quantity) {
     quantity = parseInt(quantity, 10);
-    if (quantity <= 0) {
-        removeFromCart(name);
+    if (quantity < 1) {
+        cart[name].quantity = 1;  
     } else {
         cart[name].quantity = quantity;
-        updateCart();
     }
+    updateCart();
 }
 
 function updateCart() {
@@ -45,7 +45,7 @@ function updateCart() {
         cartEntry.innerHTML = `
             <span>${item}</span>
             <span>$${cart[item].price.toFixed(2)}</span>
-            <input type="number" class="quantity-input" value="${cart[item].quantity}" min="0" onchange="updateQuantity('${item}', this.value)">
+            <input type="number" class="quantity-input" value="${cart[item].quantity}" min="1" onchange="updateQuantity('${item}', this.value)">
             <span>$${itemSubtotal}</span>
             <button onclick="removeFromCart('${item}')">Remove</button>
         `;
