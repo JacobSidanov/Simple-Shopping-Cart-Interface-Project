@@ -15,7 +15,7 @@ body {
   display: grid;
   gap: 20px;
   margin: 0 auto;
-  max-width: 1200px; 
+  max-width: 1000px; 
 }
 
 .products-container {
@@ -56,7 +56,12 @@ body {
 }
 
 .product h2 {
-  color: #5a5a5a; 
+  color: #5a5a5a;
+  min-height: 3em; 
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  margin: 0.5em 0;
 }
 
 .product p {
